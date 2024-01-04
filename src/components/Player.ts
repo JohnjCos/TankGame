@@ -1,3 +1,3 @@
 import { defineComponent } from "bitecs";
 
-export const Player = defineComponent()
+export const Player = defineComponent();

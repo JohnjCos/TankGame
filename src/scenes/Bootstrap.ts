@@ -1,23 +1,23 @@
-import Phaser from 'phaser'
+import Phaser from "phaser";
 
 export class Bootstrap extends Phaser.Scene {
-    constructor() {
-        super('bootstrap')
-    }
+  constructor() {
+    super("bootstrap");
+  }
 
-    init() {}
+  init() {}
 
-    preload() {
-        this.load.multiatlas('tankers', 'assets/tanker-game.json', 'assets')
-    }
+  preload() {
+    this.load.multiatlas("tankers", "assets/tanker-game.json", "assets");
+  }
 
-    create() {
-        this.createNameGame()
-    }
+  create() {
+    this.createNameGame();
+  }
 
-    update() {}
+  update() {}
 
-    private createNameGame() {
-        this.scene.launch('game')
-    }
+  private createNameGame() {
+    this.scene.launch("game");
+  }
 }
